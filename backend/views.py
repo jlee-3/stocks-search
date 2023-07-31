@@ -16,6 +16,7 @@ class StocksApiView(APIView):
         # for alpha vantage api docs, see https://www.alphavantage.co/documentation/
         url = 'https://www.alphavantage.co/query'
         params = {
+            # 'adjusted' factors in price changes due to stock splits
             'function': 'TIME_SERIES_MONTHLY_ADJUSTED',
             'symbol': request.data.get('ticker'),
             'apikey': env("ALPHAVANTAGE_API_KEY"),

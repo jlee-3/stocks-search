@@ -11,6 +11,9 @@ API endpoint to track your investment in a given stock. Simply input stock ticke
 }
 ```
 
+**Current assumptions and limitations**
+The results assume stocks have positive growth over the given period. Any gains from dividends are also ignored
+
 ## Installation and Setup
 
 In the root folder, create a virtual environment and activate it
