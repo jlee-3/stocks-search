@@ -57,7 +57,7 @@ After logging in with your super user credentials, parameters can be submitted v
 Example parameters:
 
 ```
-{"ticker": "AAPL","number_stocks": "30","timespan":"day","start":"2018-03-09"}
+{"ticker": "AAPL","number_stocks": "30","start":"2018-03-09"}
 ```
 
 Alternatively, use curl on the command line. Replace user and password with your super user credentials
