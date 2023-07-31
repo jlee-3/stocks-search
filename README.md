@@ -1,4 +1,4 @@
-# Stocks Search
+# Stocks Tracker
 
 API endpoint to track your investment in a given stock. Simply input stock ticker, number of stocks and purchase date to view the following statistics
 
