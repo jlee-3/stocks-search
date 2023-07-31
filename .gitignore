@@ -13,7 +13,7 @@
 
 # database files
 data/
-.sqlite3
+*.sqlite3
 
 # misc
 .DS_Store
