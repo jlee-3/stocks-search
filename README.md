@@ -7,13 +7,11 @@ API endpoint to track your investment in a given stock. Simply input stock ticke
 	principal
 	current_value
 	capital_gain
+	dividends
+	total_gain
 	percent_gain
 }
 ```
-
-**Current assumptions and limitations**
-
-The results assume stocks have positive growth over the given period. Any gains from dividends are also ignored
 
 ## Installation and Setup
 
