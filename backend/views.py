@@ -1,5 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 from rest_framework import permissions
 import environ
 import requests
@@ -55,9 +56,9 @@ class StocksApiView(APIView):
                 'percent_gain': round(percent_gain, 2),
             }
 
-            return Response(data=result, status=200)
+            return Response(data=result, status=status.HTTP_200_OK)
         else:
-            return (Response(status=400))
+            return Response(data={'message': 'Data not found or not properly formatted'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 def sum_dividends(data, start_month):
